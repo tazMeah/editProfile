@@ -62,12 +62,13 @@ form {
 }
 
 
-form input {
+form input, textarea {
     width: 100%;
     padding: 14px;
     border-radius: 20px;
     box-sizing : border-box; /* an important property to remember when styling inputs */
-    border: 1px solid #505355;   
+    border: 1px solid #505355; 
+    resize: none;  
 }
 
 
@@ -96,4 +97,8 @@ button:hover, #update:hover {
 
 p{
     word-wrap: break-word;
+}
+
+textarea {
+    height: 150px;
 }

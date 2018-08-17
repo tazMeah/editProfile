@@ -15,8 +15,8 @@ const editProfile = {
         </label>
         <label>
             <h3>Bio</h3>
-            <input ng-model="$ctrl.inputs.bio" id="bio">
-            <!-- <textarea ng-model="$ctrl.inputs.bio" id="bio"></textarea> -->
+            <!--<input ng-model="$ctrl.inputs.bio" id="bio">-->
+             <textarea ng-model="$ctrl.inputs.bio" id="bio"></textarea>
         </label>
         <a href="#!/profile">
             <button id="update" ng-click="$ctrl.sendToService($ctrl.inputs)">Update</button>
