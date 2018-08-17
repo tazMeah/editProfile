@@ -21,7 +21,7 @@ h3 {
     font-size: 18px;
 }
 
-figure {
+figure, #editForm {
     max-width: 600px;
     border-radius: 15px;
     overflow: hidden;
@@ -42,11 +42,11 @@ figure div {
     background-position: center;
 }
 
-figcaption {
+figcaption, #editForm {
     padding: 20px;
 }
 
-figure button {
+figure button, #editForm button {
     padding: 15px;
     margin: 0 15px 25px 15px;
     border-radius: 20px;
@@ -74,4 +74,18 @@ form input {
 
 label {
     overflow: hidden;
+}
+
+#editForm a {
+    display: flex;
+    margin-top: 25px;
+}
+
+#update {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+textarea:focus, input:focus, button:focus{
+    outline: none;
 }
