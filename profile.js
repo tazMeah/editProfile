@@ -5,16 +5,24 @@ const userProfile = {
     <figure>
         <div></div>
         <figcaption>
-            <h1>Grant Chirpus</h1>
-            <span id="contact">grant@grandcircus.co</span>
-            <p id="bio">I am pretty cool. I a great job. I like to play Tetris. I am pretty ok at AngularJS.</p>
+            <h1>{{$ctrl.profileInfo.name}}</h1>
+            <span id="contact">{{$ctrl.profileInfo.contact}}</span>
+            <p id="bio">{{$ctrl.profileInfo.bio}}</p>
         </figcaption>
         <a href="/#!/editProfile">
             <button>Edit</button>
         </a>
         
     </figure>
-    `
+    `,
+    controller: ["ProfileService", function (ProfileService) {
+        const vm = this;
+        vm.profileInfo = ProfileService.userProfile;
+
+    }],
+    bindings: {
+        
+    }
 }
 
 

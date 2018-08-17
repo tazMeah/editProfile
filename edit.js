@@ -24,12 +24,13 @@ const editProfile = {
             
         
     `,
-    controller: function () {
+    controller: ["ProfileService", function (ProfileService) {
         const vm = this;
         vm.sendToService = function(profileInputs) {
-            console.log(profileInputs)
+            ProfileService.setUserProfile(profileInputs);
+
         }
-    }
+    }]
 
 };
 

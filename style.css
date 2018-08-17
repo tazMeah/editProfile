@@ -17,7 +17,7 @@ h3 {
 }
 
 #contact {
-    color: #eee;
+    color: #777;
     font-size: 18px;
 }
 
@@ -88,4 +88,8 @@ label {
 
 textarea:focus, input:focus, button:focus{
     outline: none;
+}
+
+button:hover, #update:hover {
+    background: #5BECD8;
 }
