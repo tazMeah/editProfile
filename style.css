@@ -1,21 +1,45 @@
+a {
+    text-decoration: none;
+}
 body {
     font-family: "Work Sans";
+    background: #dedede;
 }
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    margin-bottom: 0;
+}
+
+h3 {
+    color: #1ECEFD;
+}
+
+#contact {
+    color: #eee;
+    font-size: 18px;
+}
+
 figure {
-    border: 1px dashed orange;
     max-width: 600px;
     border-radius: 15px;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
+    box-shadow: 0px 0px 10px 0px rgba(204,204,204,1);
+    background: #efefef;
 }
+
+figure a {
+    display: flex;
+}
+
 
 figure div {
     height: 400px;
-    border: 1px solid green;
     background: url(4x6.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 figcaption {
@@ -24,9 +48,30 @@ figcaption {
 
 figure button {
     padding: 15px;
-    margin: 0 15px 15px 15px;
+    margin: 0 15px 25px 15px;
     border-radius: 20px;
     background:#505355;
     color: #eee;
     font-size: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+form {
+    display: grid;
+}
+
+
+form input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 20px;
+    box-sizing : border-box; /* an important property to remember when styling inputs */
+    border: 1px solid #505355;   
+}
+
+
+
+label {
+    overflow: hidden;
 }

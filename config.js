@@ -10,7 +10,7 @@ angular.module("App").config(["$routeProvider", function($routeProvider){
     })
     .when("/editProfile", {
         template: `
-        <h1>Edit profile</h1>
+        <edit-profile></edit-profile>
         `
     })
     .otherwise({
