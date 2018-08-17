@@ -93,3 +93,7 @@ textarea:focus, input:focus, button:focus{
 button:hover, #update:hover {
     background: #5BECD8;
 }
+
+p{
+    word-wrap: break-word;
+}

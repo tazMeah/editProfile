@@ -18,6 +18,11 @@ const userProfile = {
     controller: ["ProfileService", function (ProfileService) {
         const vm = this;
         vm.profileInfo = ProfileService.userProfile;
+        /* trying to prepopulate the form with existing values to be edited.
+        using the 'value' property did not work. tried ng-value too */
+       
+
+        
 
     }],
     bindings: {
