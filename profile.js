@@ -9,7 +9,7 @@ const userProfile = {
             <span id="contact">{{$ctrl.profileInfo.contact}}</span>
             <p id="bio">{{$ctrl.profileInfo.bio}}</p>
         </figcaption>
-        <a href="/#!/editProfile">
+        <a href="#!/editProfile">
             <button>Edit</button>
         </a>
         

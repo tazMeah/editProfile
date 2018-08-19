@@ -14,7 +14,7 @@ angular.module("App").config(["$routeProvider", function($routeProvider){
         `
     })
     .otherwise({
-        redirectTo: "/edit"
+        redirectTo: "/profile"
     })
 
 }])
