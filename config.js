@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module("App").config(["$routeProvider", function($routeProvider){
+angular.module("App").config(function($routeProvider){
     $routeProvider
     .when("/profile", {
         template: `
@@ -17,6 +17,6 @@ angular.module("App").config(["$routeProvider", function($routeProvider){
         redirectTo: "/profile"
     })
 
-}])
+})
 
     
